@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'dark-mode-test' title`, () => {
+  it(`should have the 'Dark Mode Test' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('dark-mode-test');
+    expect(app.title).toEqual('Dark Mode Test');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, dark-mode-test');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Dark Mode Test');
   });
 });
